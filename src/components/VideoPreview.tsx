@@ -19,7 +19,7 @@ export function VideoPreview(props: {id: string; title: string}) {
             ].join(', ')}
           />
           <img
-            style={{width: '100%', height: '100%'}}
+            style={{width: '100%', height: '100%', objectFit: 'cover'}}
             src={`https://i.ytimg.com/vi/${props.id}/sddefault.jpg`}
             srcSet={[
               `https://i.ytimg.com/vi/${props.id}/mqdefault.jpg 320w`,
