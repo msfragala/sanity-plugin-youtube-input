@@ -1,5 +1,6 @@
 .env
 .env.*
+.sanity
 
 # Logs
 logs

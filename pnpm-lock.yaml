@@ -14,6 +14,9 @@ dependencies:
   '@sanity/ui':
     specifier: ^1.8.2
     version: 1.8.2(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@5.3.11)
+  styled-components:
+    specifier: ^5.3.11
+    version: 5.3.11(@babel/core@7.23.0)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
 
 devDependencies:
   '@sanity/pkg-utils':
@@ -76,9 +79,6 @@ devDependencies:
   sanity:
     specifier: ^3.17.0
     version: 3.17.0(@types/react@18.2.25)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
-  styled-components:
-    specifier: ^5.3.11
-    version: 5.3.11(@babel/core@7.23.0)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -1326,6 +1326,7 @@ packages:
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    requiresBuild: true
     optional: true
 
   /@emotion/memoize@0.8.1:
