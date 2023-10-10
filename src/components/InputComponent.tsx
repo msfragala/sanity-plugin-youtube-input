@@ -10,6 +10,7 @@ export type YoutubeObject = {
   title: string
   description: string
   publishedAt: string
+  thumbnails: string[]
 }
 
 export type YoutubeInputProps = ObjectInputProps<YoutubeObject, ObjectSchemaType>
@@ -31,7 +32,12 @@ export function YoutubeInputComponent(props: Props) {
       {!!props.value?.id && (
         <Box style={{position: 'relative'}}>
           <VideoPreview id={props.value.id} title={props.value.title} />
-          <ActionsMenu onReset={reset} apiKey={props.apiKey} onReplace={patchData} />
+          <ActionsMenu
+            onReset={reset}
+            apiKey={props.apiKey}
+            onReplace={patchData}
+            details={props.value}
+          />
         </Box>
       )}
     </Stack>
