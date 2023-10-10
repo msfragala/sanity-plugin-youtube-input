@@ -1,16 +1,17 @@
 import {defineConfig, defineType} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {youtubeInput} from './src'
+import vars from './.sanity.json'
 
 export default defineConfig({
   name: 'default',
   title: 'sanity-plugin-youtube-input',
-  projectId: process.env.SANITY_STUDIO_PROJECT_ID,
-  dataset: process.env.SANITY_STUDIO_DATASET,
+  projectId: vars.projectId,
+  dataset: vars.dataset,
   plugins: [
     deskTool(),
     youtubeInput({
-      apiKey: process.env.SANITY_STUDIO_GOOGLE_API_KEY,
+      apiKey: vars.googleApiKey,
     }),
   ],
   schema: {

@@ -1,6 +1,7 @@
 .env
 .env.*
 .sanity
+.sanity.json
 
 # Logs
 logs
