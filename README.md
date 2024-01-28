@@ -25,7 +25,7 @@ export default defineConfig({
 })
 ```
 
-You'll need a Google API token with access to the [YouTube Data API](https://developers.google.com/youtube/v3/getting-started). If you don't already have one, you can create an API token in the [Google API Console](https://console.cloud.google.com). Follow this [guide](https://developers.google.com/youtube/registering_an_application) from the YoutTube Data API docs if you aren't sure how to do so.
+You'll need a Google API token with access to the [YouTube Data API](https://developers.google.com/youtube/v3/getting-started). If you don't already have one, you can create an API token in the [Google API Console](https://console.cloud.google.com). Follow this [guide](https://developers.google.com/youtube/registering_an_application) from the YouTube Data API docs if you aren't sure how to do so.
 
 ## Usage
 
